@@ -26,20 +26,31 @@
 
 .weather_widget {
     height: max-content;
-    color: aquamarine;
+    color: #61dafb;
     position: absolute;
     top: 25vh;
     right: 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(97, 218, 251, 0.5);
+    border: 1px solid rgb(97, 218, 251);
+    border-radius: 20px
 }
 
 select {
+    color: #61dafb;
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
     background: none;
     border: none;
     outline: none;
 }
+option {
+    color: black;
+}
+
 
 @media (max-width: 576px) {
 
