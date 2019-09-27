@@ -1,0 +1,64 @@
+.temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature h2 {
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.temperature p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.therm {
+    width: 30px;
+    height: 30px;
+}
+.weatherIcon {
+    width: 70px;
+    height: 70px;
+}
+
+.weather_widget {
+    height: max-content;
+    color: aquamarine;
+    position: absolute;
+    top: 25vh;
+    right: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 576px) {
+
+    .therm {
+        width: 25px;
+        height: 25px;
+    }
+
+    .temperature h2 {
+        font-size: 25px;
+    }
+
+    .weatherIcon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .weather_widget {
+        top: 84vh;
+        right: 60vw;
+    }
+}

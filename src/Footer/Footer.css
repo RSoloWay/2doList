@@ -1,0 +1,17 @@
+footer {
+    height: 8vh;
+    background: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+    outline: none;
+    margin: 0 10px 0 10px;
+}
+.social {
+    color: aquamarine;
+    font-size: 40px;
+}
