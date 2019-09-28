@@ -1,5 +1,6 @@
 footer {
-    height: 8vh;
+    position: relative;
+    height: 8%;
     background: #282c34;
     display: flex;
     justify-content: center;

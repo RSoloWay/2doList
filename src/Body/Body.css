@@ -1,6 +1,7 @@
 
 #main {
-  height: 80vh;
+  position: relative;
+  height: 80%;
   /* background: rgba(40, 44, 52, 0.5); */
   background: url(main_bg04.jpg) no-repeat;
   background-size: cover;
@@ -118,9 +119,9 @@ form {
   top: 5px; 
 }
 .cleaner {
-  cursor: pointer;
+    cursor: pointer;
     position: absolute;
-    top: 86%;
+    top: 93%;
     width: 80px;
     height: 30px;
     color: rgba(0, 0, 0, 0.7);
@@ -163,7 +164,7 @@ form {
 
   .cleaner {
     padding: 0;
-    top: 86vh;
+    top: 93%;
     right: 12%;
     height: 21px;
     width: 70px;

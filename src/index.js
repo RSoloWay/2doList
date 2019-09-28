@@ -8,12 +8,13 @@ import * as serviceWorker from './serviceWorker';
 
 
 
-function clock() {
+ReactDOM.render(<App />, document.getElementById('root'));
 
-    ReactDOM.render(<App />, document.getElementById('root'));
-}
+// function clock() {
+    
+// }
 
-setInterval(clock, 1000);
+// setInterval(clock, 1000);
 
 
 serviceWorker.unregister();
