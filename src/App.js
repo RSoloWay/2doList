@@ -20,7 +20,6 @@ function test() {
 	
 }
 
-
 function App() {
   	return (
 		<div onLoad={test} className='appWrapper'>

@@ -48,6 +48,7 @@ class Weather extends React.Component {
                         <option>Lviv</option>
                         <option>Kharkiv</option>
                         <option>Odessa</option>
+                        <option>Kryvyi Rih</option>
                     </select>
                 </div>
             </div>

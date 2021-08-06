@@ -1,14 +1,25 @@
 
 #main {
   position: relative;
-  height: 80%;
+  height: 100%;
+  width: 100%;
   /* background: rgba(40, 44, 52, 0.5); */
-  background: url(main_bg04.jpg) no-repeat;
-  background-size: cover;
+  /*background: url(main_bg04.jpg) no-repeat;*/
+  /*background-size: cover;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   
+}
+
+.body_container {
+  height: 80%;
+  position: relative;
+  background: url(main_bg04.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 form {
@@ -92,6 +103,7 @@ form {
   margin-bottom: 5px;
   border: 1px solid #61dafb;
 }
+
 .done {
   font-weight: bolder;
   box-sizing: border-box;
@@ -113,6 +125,31 @@ form {
   bottom: 5px;
 }
 
+.exit{
+  cursor: pointer;
+  font-weight: bolder;
+  font-style: normal;
+  color:#61dafb;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+}
+.fa-door-open {
+  color:#61dafb;
+  font-size: 50px;
+}
+
+.fa-trash-alt {
+  position: absolute;
+  right: 3%;
+  top: 5px;
+}
+
 .marker {
   position: absolute;
   left: 1%; 
@@ -122,7 +159,7 @@ form {
     cursor: pointer;
     position: absolute;
     top: 93%;
-    width: 80px;
+    width: 100px;
     height: 30px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
@@ -131,6 +168,32 @@ form {
     background: #7fffd4;
     /* border-radius: 100% 0% 100% 0% / 50% 50% 50% 50%; */
     outline: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.filter{
+  position: absolute;
+  top: 93%;
+  left:10%;
+  display: flex;
+}
+
+.filter_all, .filter_active, .filter_done {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid #61dafb;
+  background: #7fffd4;
+  /* border-radius: 100% 0% 100% 0% / 50% 50% 50% 50%; */
+  outline: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.filter_all {
+  background: #61dafb;
 }
 
 @media (max-width: 576px) {
