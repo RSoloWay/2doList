@@ -43,7 +43,7 @@ class Login extends React.Component {
             newUsersData = this.state.usersData;
         
         if(!this.state.usersData[userName] && userName != '' && userPass != ''){
-            console.log('можно регистрировать этого пользователя')
+            console.log('Можно регистрировать этого пользователя')
             newUsersData[userName] = {
                 'login': userName,
                 'password': userPass,
@@ -53,10 +53,10 @@ class Login extends React.Component {
             this.props.updateData(userName);
         } else if(this.state.usersData[userName]) {
             document.getElementsByClassName("error_output")[0].textContent = 'A user with this name already exists! Try another login!'
-            console.log('такой пользователь уже есть!!!')
+            console.log('Такой пользователь уже есть!!!')
         } else if(userName == ''|| userPass == '') {
             document.getElementsByClassName("error_output")[0].textContent = 'You did not enter all the data!'
-            console.log('введите все данные')
+            console.log('Введите все данные')
         }
     }
 
